@@ -9,9 +9,9 @@ Assigning a value to a named communication object should be enough to send its v
 Declaring that same named communication object should be enough to receive its value.
 
 This rule is valid as long as the programs are connected to the same (RabbitMQ) server. 
-As long as at least one Global with a certain name is alive, then this named Global has a value that is the same for all the same named globals connected to the framework. Only when the last named Global gets out of scope, the value is gone.
+As long as at least one Global with a certain name is alive, then this named Global has a value that is the same for all the same named globals connected to the framework. Only when the last named Global gets out of scope, the value is gone.  
 For more information see [this article](http://beentjessoftware.nl/Globals/GlobalsDesignPattern.pdf). 
-  
+To go to the package, click [here](https://github.com/MathijsJBeentjes/Globals.NET.RabbitMQ)  
 
 ## Examples using Globals.NET.RabbitMQ:
 
@@ -208,7 +208,8 @@ In the previous example, you could not see who else is connected on the moment y
 
 #### Program.cs:
 
-~~~csharpusing System;
+~~~csharp
+using System;
 using Globals.NET.RabbitMQ;
 
 namespace Chat2
@@ -1024,7 +1025,8 @@ namespace Vote
 }
 ~~~
 #### VoteForm.cs:
-~~~csharpusing Globals.NET.RabbitMQ;
+~~~csharp
+using Globals.NET.RabbitMQ;
 using System;
 using System.Windows.Forms;
 

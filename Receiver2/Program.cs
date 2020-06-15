@@ -7,7 +7,6 @@ namespace Receiver
     {
         static void Main()
         {
-
             // A declaration plus event handler
             using var SomeText = new Global<string>("SomeText", handler: SomeText_DataChanged);
 

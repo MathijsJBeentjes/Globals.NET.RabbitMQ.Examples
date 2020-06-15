@@ -7,8 +7,6 @@ namespace Sender
     {
         static void Main()
         {
-            GlobalsServer.Settings.Password = "guest";
-
             using var SomeText = new Global<string>("SomeText");
 
             // assign a value, and we are done!
